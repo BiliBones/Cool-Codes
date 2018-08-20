@@ -1,0 +1,95 @@
+body{
+    font-family: 'Lobster', cursive;
+}
+.cc-nav{
+    overflow: hidden;
+    background: #ff7e5f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.cc-nav a{
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    float: left;
+    display: block;
+}
+.cc-nav a:hover{
+    color: black;
+}
+
+.cc-nav .cc-brand{
+    color: black;
+    border: 2px solid black;
+    padding: 14px;
+    text-decoration: none;
+    float: left;
+    display: block;
+}
+.cc-nav .cc-brand:hover{
+    color: #ff7e5f;
+    background-color: black;
+    border: 2px solid #ff7e5f;
+}
+.cc-nav .cc-dropdown-container{
+    float: left;
+    display: block;
+    overflow: hidden;
+    color: white;
+}
+.cc-nav .cc-dropdown-container .cc-dropdown-items a{
+    float: none;
+    display: block;
+    padding: 16px;
+}
+.cc-nav .cc-dropdown-container .cc-dropdown-items a:hover{
+    color: #ff7e5f;
+    background-color: #ccd1d1;
+}
+.cc-nav .cc-dropdown-container .cc-dropdown-button{
+    padding: 16px;
+}
+.cc-nav .cc-dropdown-container .cc-dropdown-items{
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+.cc-nav .cc-dropdown-container:hover .cc-dropdown-items{
+    display: block;
+    
+}
+.cc-nav .cc-dropdown-container:hover{
+    color: black;
+}
+.cc-nav .cc-icon{
+    display: none;
+}
+
+@media screen and (max-width:575.98px){
+    .cc-nav.cc-responsive{
+        position: relative;
+    }
+    .cc-nav.cc-responsive .cc-icon{
+        position: absolute;
+        top: 2px;
+        right: 2px;
+    }
+    .cc-nav.cc-responsive a,.cc-nav.cc-responsive .cc-dropdown-container,.cc-nav.cc-responsive .cc-dropdown-container .cc-dropdown-items a{
+        display: block;
+        float: none;
+    }
+    .cc-nav.cc-responsive .cc-dropdown-container .cc-dropdown-items{
+        position: relative;
+    }
+    .cc-nav.cc-brand{
+        display: block;
+    }
+    .cc-nav a, .cc-nav .cc-dropdown-container{
+        display: none;
+    }
+    .cc-nav .cc-icon{
+        float: right;
+        display: block;
+    }
+}
